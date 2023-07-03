@@ -46,7 +46,7 @@
       <section class="main-page">
         <div class="container main-box">
           <h1 class="main-page-title">Effective Solutions for Your Business</h1>
-          <button class="mp-btn-order" type="button">Order Service</button>
+          <button class="mp-btn-order" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
 
@@ -414,16 +414,19 @@
     </footer>
       </div>
     </footer>
+
     <!--modal section-->
-    <div class="backdrop">
+    
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <svg class="modal-icon"
-          width="104" height="56">
-          <use href="./images/icons.svg#icon-vector"></use>
-        </svg>  
-
-
+        <batton class="modal-btn" type="batton" data-modal-close>
+          <svg class="modal-icon"
+            width="8" height="8">
+            <use href="./images/icons.svg#icon-x-btn"></use>
+          </svg>  
+        </batton>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
